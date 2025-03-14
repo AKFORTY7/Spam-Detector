@@ -2,6 +2,7 @@
 import React from 'react';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import SpamDetector from '@/components/SpamDetector';
+import BackendStatus from '@/components/BackendStatus';
 import { Sparkles, ShieldCheck } from 'lucide-react';
 
 const Index = () => {
@@ -26,6 +27,9 @@ const Index = () => {
           <p className="text-lg text-muted-foreground max-w-xl mx-auto">
             A beautifully designed, intelligent system that helps you identify and filter spam messages with precision and elegance.
           </p>
+          <div className="mt-2">
+            <BackendStatus />
+          </div>
         </div>
       </header>
       
